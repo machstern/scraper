@@ -1,4 +1,15 @@
-import { test, expect } from '@playwright/test';
+import { test, expect,  } from '@playwright/test';
+
+const setBaseUrl = `${process.env.SITE_URL}/showSet/id/`
+
+test('download set', async args=> {
+  const {page} = args
+
+
+  
+  await page.goto("")
+})
+
 
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
